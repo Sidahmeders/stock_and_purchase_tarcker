@@ -1,0 +1,145 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+  color: rgb(87, 218, 87);
+}
+
+body {
+  overflow-y: scroll;
+  background-color: #344;
+}
+
+.add-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(223, 252, 252);
+}
+
+.add-items h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  margin-top: 5px;
+  font-size: 2.5em;
+  color: rgb(65, 201, 224);
+}
+
+.add-items .final-total {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    width: max-content;
+    height: max-content;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 16px 30px;
+    font-size: 1.5em;
+    color: rgb(43, 241, 16);
+    background-color: #122;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.add-items .user-input input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid rgb(224, 221, 221);
+  border-radius: 5px;
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+.add-items .user-input tr td {
+  background-color: #fff;
+  color: #344;
+}
+
+.add-items .add-btn {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  padding: 3px 15px;
+  font-size: 1.2em;
+}
+
+.add-items table.content-table {
+  border-collapse: collapse;
+  min-width: 400px;
+  width: 90%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  margin-top: 2em;
+}
+
+.add-items .content-table thead tr {
+  background-color: rgb(213, 224, 223);
+  color: #011;
+  text-align: left;
+  font-weight: bold;
+}
+
+.add-items .content-table th,
+.add-items .content-table td {
+  padding: 12px 15px;
+}
+
+.add-items .content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.add-items .content-table tbody tr td:nth-child(1) {
+  width: 2vw;
+}
+.add-items .content-table tbody tr td:nth-child(2) {
+  width: 20vw;
+}
+.add-items .content-table tbody tr td:last-child {
+  width: 5vw;
+}
+
+.add-items .content-table tbody tr:nth-of-type(even) {
+  background: linear-gradient(190deg, #455, #344)
+}
+
+.add-items .content-table tbody tr:nth-of-type(odd) {
+  background: linear-gradient(190deg, #344, #455)
+}
+
+.add-items .content-table tbody tr:last-of-type {
+  border-bottom: 3px solid rgb(213, 224, 223);
+}
+
+.add-items .content-table tbody tr td button,
+.add-items .content-table tbody tr td a {
+  border: none;
+  color: #ffffff;
+  padding: 3px 6px 4px 6px;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 3px;
+  transition: .8s;
+  outline-color: transparent;
+  text-decoration: none;
+}
+
+.add-items .content-table tbody tr td .del {
+  background-color: rgb(209, 34, 28);
+  
+}
+
+.add-items .content-table tbody tr td .upd {
+  background-color: rgb(179, 187, 67);
+}
+
+.add-items .content-table tbody tr td .del:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.add-items .content-table tbody tr td .upd:hover {
+  background-color: rgb(214, 224, 63);
+  cursor: default;
+}

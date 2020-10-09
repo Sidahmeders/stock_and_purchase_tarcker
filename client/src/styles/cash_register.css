@@ -1,0 +1,41 @@
+
+.cash-register {
+    display: flex;
+    height: 99.9vh;
+    overflow: hidden;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.cash-register .screen {
+    background-color: #344;
+    width: 49vw;
+    text-align: center;
+    color: rgb(223, 252, 252);
+}
+
+.cash-register .screen.left .id-scanner {
+    width: 96%;
+    height: 50px;
+    margin: 2%;
+}
+
+.cash-register .screen.left .id-scanner input {
+    width: 99%;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline-color: teal;
+    border: none;
+    font-size: 1.3em;
+}
+
+.cash-register .screen.left .list-of-products {
+    width: 96%;
+    height: 87.5%;
+    margin: 2%;
+    text-align: start;
+    border-radius: 3px;
+    overflow-y: scroll;
+}
