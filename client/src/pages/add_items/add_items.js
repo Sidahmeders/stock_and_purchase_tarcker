@@ -72,7 +72,10 @@ export default function () {
 
     return (
         <div className="add-items">
-            <h1>add new item</h1>
+            <div className="header">
+                <Link to="/cash_register">Cash Register</Link>
+                <h1>Add New Item</h1>
+            </div>    
             <table className="content-table">
                 <thead>
                     <tr>

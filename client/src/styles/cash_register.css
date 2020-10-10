@@ -39,3 +39,22 @@
     border-radius: 3px;
     overflow-y: scroll;
 }
+
+.cash-register .screen a {
+    text-decoration: none;
+    color: rgb(141, 121, 230);
+    background-color: rgb(19, 35, 58);
+    transition: .8s;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    right: .5%;
+    bottom: .5%;
+}
+
+.cash-register .screen a:hover {
+    background-color: rgb(37, 65, 107);
+    color: rgb(134, 112, 248);
+}

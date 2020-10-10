@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/cash_register.css';
 import data from '../../data/mydata.json';
 
@@ -34,6 +35,7 @@ export default function () {
     return (
         <div className="cash-register">
             <div className="screen left">
+                <Link to="add_items">Add Items</Link>
                 <div className="id-scanner">
                     <input 
                         type="text" 
